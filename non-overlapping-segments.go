@@ -11,6 +11,10 @@ func main() {
 	for j := len(arr) - 2; j >= 0; j-- {
 		//Slice the slice:)
 		batch := arr[j:min(j+limit, len(arr))]
+		//			OR SIMPLY
+		//batch := arr[j:j+limit]// j + 2
+		
+		// How is the code being executed?
 		//1.	batch := arr[7:9]
 		//2.	batch := arr[6:8]
 		//3.	batch := arr[5:7]
