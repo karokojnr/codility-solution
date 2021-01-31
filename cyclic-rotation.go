@@ -21,6 +21,8 @@ func Solution(A []int, K int) []int {
     // write your code in Go 1.4
     // Last index to be Fisrt index: 
     // :Upto to BUT excluding  last index (unfurl)...
-    A = append(A[len(A) - K:], A[0:len(A)-K]...)
+    if (K > 0 && len(A) > 0 ){
+        A = append(A[len(A) - K:], A[0:len(A)-K]...)
+    }
     return A
 }
